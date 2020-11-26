@@ -1,4 +1,4 @@
-package Interface;
+package Products__Interface;
 
 public interface Interface {
   public int getID();
