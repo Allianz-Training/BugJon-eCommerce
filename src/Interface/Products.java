@@ -1,12 +1,18 @@
 package Interface;
 
 public class Products implements Interface{
-	public String ID;
+	public int ID;
 	public String title;
 	public int price;
 
+	public Products(int id, String title, int price) {
+		this.ID = id;
+		this.title = title;
+		this.price = price;
+	}
+	
 	@Override
-	public String getID() {
+	public int getID() {
 		return ID;
 	}
 
