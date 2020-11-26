@@ -1,5 +1,8 @@
 package Interface;
 
+import java.util.HashMap;
+import sun.security.action.PutAllAction;
+
 public class Products implements Interface{
 	public int ID;
 	public String title;
@@ -10,7 +13,12 @@ public class Products implements Interface{
 		this.title = title;
 		this.price = price;
 	}
-	
+	public ProductList() {
+	  HashMap<String, String> Item = new HashMap<String, String>;
+	  Item.put<"Honda Accord", 1200000>;
+	  Item.put<"Toyota Alphard", 1100000>;
+	  Item.put<"Hyundai H1", 1400000>;
+	}
 	@Override
 	public int getID() {
 		return ID;
